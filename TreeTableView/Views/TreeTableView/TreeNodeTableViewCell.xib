@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="nodecell" rowHeight="100" id="DoG-xB-jSQ" customClass="TreeNodeTableViewCell" customModule="TreeTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="396" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" tableViewCell="DoG-xB-jSQ" id="NEX-KZ-QJC">
+                <rect key="frame" x="0.0" y="0.0" width="396" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxv-Sf-8Fa">
+                        <rect key="frame" x="10" y="9" width="378" height="82"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="down-arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Ts7-Du-gyq">
+                                <rect key="frame" x="334" y="32" width="36" height="21"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="36" id="b7z-ik-RPP"/>
+                                    <constraint firstAttribute="height" constant="21" id="kQJ-JU-gbb"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKE-dX-kl6">
+                                <rect key="frame" x="74" y="27" width="252" height="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ts7-Du-gyq" secondAttribute="trailing" constant="8" id="2Eb-3j-gnE"/>
+                            <constraint firstItem="Ts7-Du-gyq" firstAttribute="top" secondItem="cxv-Sf-8Fa" secondAttribute="top" constant="32" id="J6B-LV-1Pa"/>
+                            <constraint firstAttribute="width" constant="378" id="RBX-Kx-hFv"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="cxv-Sf-8Fa" secondAttribute="bottom" constant="9" id="3ax-Xm-iXY"/>
+                    <constraint firstItem="cxv-Sf-8Fa" firstAttribute="top" secondItem="NEX-KZ-QJC" secondAttribute="top" constant="9" id="ICy-3R-HxR"/>
+                    <constraint firstItem="cxv-Sf-8Fa" firstAttribute="leading" secondItem="NEX-KZ-QJC" secondAttribute="leading" constant="10" id="Qdv-Dz-Tw9"/>
+                    <constraint firstAttribute="trailing" secondItem="cxv-Sf-8Fa" secondAttribute="trailing" constant="8" id="bxf-J0-bnI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="background" destination="NEX-KZ-QJC" id="fSF-zr-UuE"/>
+                <outlet property="nameButton" destination="GKE-dX-kl6" id="4qZ-IN-BmP"/>
+                <outlet property="nodeIMG" destination="Ts7-Du-gyq" id="2EO-rq-r4d"/>
+                <outlet property="view" destination="cxv-Sf-8Fa" id="mUy-hu-ZhA"/>
+            </connections>
+            <point key="canvasLocation" x="376.81159420289856" y="338.16964285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="down-arrow" width="512" height="512"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
